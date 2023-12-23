@@ -1,0 +1,45 @@
+:root {
+    /* LEGACY main-brand-color: #157fcc */
+    --main-brand-color: rgb(210, 115, 29);
+    --main-brand-light-color: rgb(255, 229, 223);
+}
+
+.x-panel-header-title-default {
+    color: var(--main-brand-color);
+}
+
+section {
+    margin: 0px 2em;
+    padding: 0;
+}
+
+li::before {
+    color: var(--main-brand-color)
+}
+
+.x-tab.x-tab-active.x-tab-default {
+    background-color: var(--main-brand-color);
+    border-color: var(--main-brand-color);
+    transition: background-color 200ms;
+}
+
+.x-tab.x-tab-over.x-tab-default:not(.x-tab-active) {
+    background-color: var(--main-brand-light-color);
+    outline: none;
+}
+
+.x-tab.x-tab-active.x-tab-default:focus {
+    outline: none
+}
+
+.x-grid-item-selected:not(x-grid-item-active) {
+    background-color: var(--main-brand-color);
+}
+
+.x-grid-item-over {
+    background-color: var(--main-brand-light-color);
+}
+
+article[id="1649358682357_N101DC"] .label-title-block-description {
+    color: var(--main-brand-color)
+}

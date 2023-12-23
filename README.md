@@ -33,7 +33,12 @@ B. The client wants to warn users before they leave the page in order to improve
 4. Change the icon (marker/"bullet"/etc.) color of each list type to use the main color instead of black.
 5. Change table type "zebra-striped" header text color to main color.
 6. Increase the left and right margins of the content section to 2 times the "<html>" element font-size.
-7. Review the output and report any place where the client might have forgotten the blue color is still present.
+7. Review the output and report any place where the client might have forgotten the blue color is still present:
+   
+In the project we found the following classes that use blue color: x-bookName, x-view-item-focused and x-tool-focus. but we don't use them.
+We have to delete the unused code.
+We will have to change the color of the browser buttons, go home and print (applying the main color to the label 'a').
+In addition, we have to change the image of the "hamburger" menu.
 
 ## B. JS Changes
 1. When clicking a link, a confirmation should be shown (`window.confirm(<message>)`)
